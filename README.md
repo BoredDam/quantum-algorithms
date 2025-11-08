@@ -1,6 +1,6 @@
 # Quantum Algorithms
 
-This repository will contain some algorithms, protocols and experiments related to **quantum computing**.
+This repository will contain some quantum computing related algorithms, protocols and experiments. The majority of the code and topics is and will be the result of the UNICT's Computer Science's Course "Quantum Computer Programming", year 2025/2026.
 
 ### Repo structure
 
