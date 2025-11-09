@@ -6,4 +6,4 @@
     - $n$-qubit GHZ circuit function
 - [**Quantum-random number generation**](./quantum_random_numbers.ipynb):
     - Quantum-random coin
-    - Quantum-random number between $[1, N]$, con $N = 2^n$ e $n$ numero di qubit
+    - Quantum-random number between $[0, N-1]$, con $N = 2^n$ e $n$ numero di qubit
