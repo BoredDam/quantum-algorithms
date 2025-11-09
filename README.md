@@ -9,9 +9,10 @@ quantum-algorithms
 ├── BoredQiskit         # package for easier qiskit usage
 │   ├── __init__.py
 │   └── FastQiskit.py   # module for simulation on fake Q-hardware
-├── algorithm-A
-├── ...
-└── algorithm-Z
+├── algorithm-A                                                           ／l、             
+├── ...                                                                 （ﾟ､ ｡ ７     
+└── algorithm-Z                                                           l  ~ヽ      
+                                                                          じしf_,)ノ
 ```
 
 ### post scriptum
