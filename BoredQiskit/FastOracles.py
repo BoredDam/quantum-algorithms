@@ -9,7 +9,7 @@ def general_boolean_oracle(n: int, sol: list[str]):
     yr = QuantumRegister(1,'out')
     qc = QuantumCircuit(xr, yr)    
     
-    for s  in sol:
+    for s in sol:
         for i in range(n):
             if s[i]=='0':
                 qc.x(xr[i])
