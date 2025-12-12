@@ -6,8 +6,8 @@ from qiskit_ibm_runtime.fake_provider import FakeVigoV2, FakeTorino, FakeGeneva,
 def run(qc, shots=1024, more_info=False):
     """
     runs the job results for a `qc` QuantumCircuit on the ideal simulator AerSimulator. 
-    `shots` lets you specify how many times should the simulation run. if `more_info` is set to True,
-    it will return a dict sorted by 
+    `shots` lets you specify how many times should the simulation run. 
+    if `more_info` is set to True, it will return a dict sorted by 
     """
     sim_backend = AerSimulator()
     pm = generate_preset_pass_manager(backend=sim_backend)
@@ -29,7 +29,6 @@ def run(qc, shots=1024, more_info=False):
     else:
         reg_name = list(data.__dict__.keys())[0]
         counts = getattr(data, reg_name).get_counts()
-        counts = results[0].data.c.get_counts()
     return counts
 
 def vigo_run(qc, shots=1024):
