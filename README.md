@@ -33,7 +33,8 @@ quantum-algorithms
 ├─ quantum-protocols                    # quantum protocols (mainly for communication)
 │  ├─ entanglement-swap
 │  └─ quantum-teleportation
-├─ toys-quantum-advantage-(deutsch)     # toy problems used to demonstrate the quantum advantage
+├─ toys-quantum-advantage               # toy problems used to demonstrate the quantum advantage
+│  ├─ simon
 │  ├─ bernstein-vazirani
 │  ├─ deutsch-jozsa
 │  └─ deutsch
