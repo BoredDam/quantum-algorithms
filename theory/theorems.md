@@ -52,4 +52,4 @@ c: 1/═════════════════════════
                               0 
 ```
 
-L'informazione quantistica di `A` è codificata esattamente in `B`, a meno di una trasformazione unitaria. È il principio alla base del Quantum Teleportation e Superdense Coding.
+L'informazione quantistica di `A` è codificata esattamente in `B`, a meno di una trasformazione unitaria. È il principio alla base di Quantum Teleportation, Superdense Coding, e di Entanglement Swap.
