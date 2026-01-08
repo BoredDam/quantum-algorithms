@@ -15,6 +15,9 @@ def quantum_number_encode(num: int, code_len: int=0):
     encodes the given `num` into a quantum circuit. if specified, `code_len` lets
     you use more qubits than needed for the number specified by `num`
     """
+    if num == 0:
+        return QuantumCircuit(code_len).to_gate(label=" 0 ")
+        
     if code_len < int(np.ceil(np.log2(num))):
         code_len = bin_num
     bin_num = int_to_bin(num, code_len)
