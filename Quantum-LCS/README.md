@@ -85,7 +85,20 @@ costruiti entrambi come variazioni dell'operatore $\text{Fixed Substring Matchin
 
 L'operatore Fixed Substring Matching implementa la seguente $f$:
 
-![image.png](attachment:image.png)
+$$
+\begin{array}{l}
+\text{FSM}(d, x, y, D^{-1}): \\
+1.\quad \lambda^{0} \leftarrow M(x,y) \\
+2.\quad \text{if } \bar{d}[0] = 1 \text{ then } D^{0} \leftarrow (D^{-1} \land \lambda^{0}) \gg 2^{0} \\
+3.\quad \text{for } i \leftarrow 1 \text{ to } \log(d) \text{ do} \\
+4.\qquad \lambda^{i} \leftarrow \mathrm{EXT}_{i}(\lambda^{i-1}) \\
+5.\qquad\quad \text{if } \bar{d}[i] = 1 \text{ then } D^{i} \leftarrow (D^{i-1} \land \lambda^{i}) \gg 2^{i} \\
+6.\qquad\quad \text{else } D^{i} \leftarrow (D^{i-1} \land \lambda^{i}) \\
+7.\quad r \leftarrow \displaystyle \bigvee_{j=d}^{n+d} D^{\log(d)}[j] \\
+8.\quad \text{return } r
+\end{array}
+$$
+
 
 In cui 
 - Ogni vettore $\lambda$ è detto di *matching substring*, ed è definito ricorsivamente come
