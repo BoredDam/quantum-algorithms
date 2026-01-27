@@ -3,6 +3,7 @@ from qiskit_aer import AerSimulator
 from qiskit.transpiler.preset_passmanagers import generate_preset_pass_manager
 from qiskit_ibm_runtime import SamplerV2 as Sampler
 import numpy as np
+import sys
 
 def int_to_bin(num: int, code_len: int):
     """
@@ -432,15 +433,21 @@ def quantum_LCS(x: str, y: str, n: int, verbose=False):
         last = d
     return l
 
-X, Y = '0001','0011'
+
+
+if len(sys.argv) != 3:
+    print("correct usage: QLCS.py <string1> <string2>\nquitting...")
+    exit(0)
+
+X, Y = str(sys.argv[1]), str(sys.argv[2])
 
 
 print(f"Looking for the LCS of strings X:'{X}', Y:'{Y}'")
 
-quantum_LCS('0001', '0011', 4, verbose=True)
+quantum_LCS(X, Y, 4, verbose=True)
+
 print(
 """
 a project by Damiano Trovato, based on the work of Cantone Domenico, 
-Faro Simone, Pavone Arianna & Viola Caterina. (2023).
-""")
+Faro Simone, Pavone Arianna & Viola Caterina. (2023).""")
 
