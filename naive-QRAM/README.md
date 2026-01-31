@@ -15,4 +15,4 @@ QRAM \ket{+}\ket{0} \to  \frac{1}{\sqrt{2^n}}\sum_{i \in \\{0,1\\}^n}(\ket{i}\ke
 $$
 
 You can also use Grover search algorithm to search in 
-$\tilde{\mathcal{O}}(\sqrt N)$ the position of a given number ($N = 2^n$, with $n$ qubits).
+$\tilde{\mathcal{O}}(\sqrt N)$ time the position of a given number ($N = 2^n$, with $n$ qubits).
