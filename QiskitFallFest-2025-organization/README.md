@@ -1,6 +1,6 @@
 # Catania Qiskit Fall Fest 2025
 
-Questa cartella contiene i notebook e i materiali da me preparati per l'evento Qiskit Fall Fest 2025 dell'Università di Catania, sponsorizzato da IBM.
+Questa cartella contiene i notebook e i materiali da me preparati per l'evento [Qiskit Fall Fest / Catania 2025](https://www.dmi.unict.it/cataniaqiskitfallfest/) dell'Università di Catania (Dipartimento di Matematica e Informatica), sponsorizzato da IBM.
 
 ## Workshop #2, Criteri di DiVincenzo
 
