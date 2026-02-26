@@ -8,10 +8,7 @@ Crea una cella di codice con le seguenti righe ed eseguila, oppure esegui il com
 
 Da terminale (è prima consigliabile essere in un virtual environment per non scassare tutto! Allego una guida, [clicca qui](https://github.com/BoredDam/notes-to-self-and-utils/tree/main/about-VENVs)):
 ```bash
-pip install qiskit
-pip install qiskit-ibm-runtime
-pip install qiskit[visualization]
-pip install qiskit-aer
+pip install -r requirements.txt
 ```
 
 o sul notebook online:
