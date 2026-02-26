@@ -6,9 +6,9 @@ import numpy as np
 import sys
 
 def int_to_bin(num: int, code_len: int):
-    """
+    '''
     converts `num` in a binary string, with the specified `code_len`
-    """
+    '''
     num = bin(num)[2:]
     num = '0'*(code_len-len(num)) + num
     return num
@@ -260,10 +260,10 @@ def grover_operator(n: int):
 
 
 def quantum_number_encode(num: int, code_len: int=0):
-    """
+    '''
     encodes the given `num` into a quantum circuit. if specified, `code_len` lets
     you use more qubits than needed for the number specified by `num`
-    """
+    '''
     if num == 0:
         return QuantumCircuit(code_len).to_gate(label=" 0 ")
         
@@ -379,10 +379,10 @@ def quantum_step_circuit(n: int, d: int, x: str, y: str):
 
 
 def run(qc, shots=1024):
-    """
+    '''
     ritorna i risultati dell'esecuzione del `qc` `QuantumCircuit` nel simulatore ideale AerSimulator. 
     `shots` permette di specificare il numero di esecuzioni da compiere.
-    """
+    '''
     sim_backend = AerSimulator(method='matrix_product_state')
     
     pm = generate_preset_pass_manager(backend=sim_backend, optimization_level=2)
@@ -447,7 +447,8 @@ print(f"Looking for the LCS of strings X:'{X}', Y:'{Y}'")
 quantum_LCS(X, Y, 4, verbose=True)
 
 print(
-"""
+'''
 a project by Damiano Trovato, based on the work of Cantone Domenico, 
-Faro Simone, Pavone Arianna & Viola Caterina. (2023).""")
+Faro Simone, Pavone Arianna & Viola Caterina. (2023).
+''')
 
